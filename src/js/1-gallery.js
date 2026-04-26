@@ -68,7 +68,7 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery-container');
+const gallery = document.querySelector('.gallery');
 
 function createGalleryItems(arr) {
   return arr
@@ -90,7 +90,7 @@ console.log(createGalleryItems(images));
 
 gallery.insertAdjacentHTML('afterbegin', createGalleryItems(images));
 
-const lightbox = new SimpleLightbox('.gallery-container a', {
+const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
